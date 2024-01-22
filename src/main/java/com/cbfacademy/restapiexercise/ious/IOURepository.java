@@ -9,6 +9,8 @@ import com.cbfacademy.restapiexercise.core.Repository;
  * The IOURepository interface defines the operations for managing IOUs in the system.
  * It provides methods for retrieving, saving, updating, and deleting IOU records.
  */
+//Repository - defines methods for database operations, data access related, hides the details of database interaction
+// Interacting w the IOU records 
 public interface IOURepository extends Repository<IOU, UUID> {
 
     /**
