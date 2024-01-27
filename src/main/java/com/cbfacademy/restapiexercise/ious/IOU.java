@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.util.UUID;
 
 public class IOU {
-    private final UUID id;// unique identifier for the IOU
+    private UUID id;// unique identifier for the IOU
     private String borrower;// name of borrower
     private String lender;// name of lender
     private BigDecimal amount;// amount covered by IOU
@@ -27,6 +27,11 @@ public class IOU {
         return id;
     }
 
+    public void setID(UUID id1) {
+        this.id = id1;
+
+    }
+
     public String getBorrower() {
         return borrower;
     }
@@ -41,5 +46,21 @@ public class IOU {
 
     public Instant getDateTime() {
         return dateTime;
+    }
+
+    public void setBorrower(String borrower2) {
+       this.borrower = borrower2;
+        // TODO Auto-generated method stub
+       // throw new UnsupportedOperationException("Unimplemented method 'setBorrower'");
+    }
+
+    public void setLender(String lender2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setLender'");
+    }
+
+    public void setDateTime(Instant dateTime2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDateTime'");
     }
 }
