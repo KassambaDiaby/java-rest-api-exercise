@@ -49,6 +49,9 @@ public class ListIOURepository implements IOURepository {
     public void delete(IOU entity) throws IllegalArgumentException, PersistenceException {
         // TODO Auto-generated method stub
         // throw new UnsupportedOperationException("Unimplemented method 'delete'");
+        if (entity == null) {
+            throw new IllegalArgumentException("parameter is empty");
+        }
         ious.remove(entity);
     }
 
